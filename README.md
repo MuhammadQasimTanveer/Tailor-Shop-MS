@@ -31,7 +31,7 @@ A modern desktop application designed for tailors to manage customer records, su
 ### 📊 Dashboard
 - Centralized navigation via a professional **navbar**
 - Status indicators for total, pending, and delivered orders
-- Fully styled interface with **hover effects** and transitions
+- Fully styled interface with **animations** and transitions
 
 ### 💬 Notifications
 - Success, error, and warning messages for all operations
@@ -41,7 +41,7 @@ A modern desktop application designed for tailors to manage customer records, su
 
 ## 🔧 Built With
 
-- **C# (.NET Framework)**
+- **C# (.NET Framework 4.8.2)**
 - **Windows Forms (WinForms)**
 - **SQL Server** (local database)
 - Custom styling & dynamic control rendering
@@ -57,7 +57,6 @@ A modern desktop application designed for tailors to manage customer records, su
 
 ## 📦 Future Plans
 
-- Cloud-based multi-user system
 - Role-based login (admin, tailor, manager)
 - Online order booking
 - Customer portal and SMS notifications
@@ -66,5 +65,5 @@ A modern desktop application designed for tailors to manage customer records, su
 
 ## 🧑‍💻 Author
 
-Developed with 💙 by Muhammad Qasim Tanvir
+Developed by Muhammad Qasim Tanvir
 
