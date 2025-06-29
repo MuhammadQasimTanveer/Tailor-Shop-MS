@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A3AF709-110D-4658-B772-3CB743DB3FA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tailor_Shop_Management_System</RootNamespace>
+    <AssemblyName>Tailor Shop Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>H:\Projects\Tailor Shop Management System\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Tailor Shop Management System/</UpdateUrl>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>757CD03213A0452DDF853FB97D62D5E30DC3D839</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Tailor Shop Management System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database_Layer\DBLayer.cs" />
+    <Compile Include="UI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settersandgetters\SettersandGetters.cs" />
+    <Compile Include="UI\LogoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LogoutForm.Designer.cs">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LogoutSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LogoutSuccess.Designer.cs">
+      <DependentUpon>LogoutSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainDashboard.Designer.cs">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\MakeReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MakeReceipt.Designer.cs">
+      <DependentUpon>MakeReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrintBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PrintBill.Designer.cs">
+      <DependentUpon>PrintBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SuitDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SuitDetail.Designer.cs">
+      <DependentUpon>SuitDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCustomer.Designer.cs">
+      <DependentUpon>ViewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WelcomeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WelcomeDashboard.Designer.cs">
+      <DependentUpon>WelcomeDashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LogoutForm.resx">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LogoutSuccess.resx">
+      <DependentUpon>LogoutSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainDashboard.resx">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\MakeReceipt.resx">
+      <DependentUpon>MakeReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrintBill.resx">
+      <DependentUpon>PrintBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SuitDetail.resx">
+      <DependentUpon>SuitDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewCustomer.resx">
+      <DependentUpon>ViewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WelcomeDashboard.resx">
+      <DependentUpon>WelcomeDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Tailor Shop Management System_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database_Layer\Images\add cutomer logo.png" />
+    <Content Include="Database_Layer\Images\balck b order 1.png" />
+    <Content Include="Database_Layer\Images\black border 2.png" />
+    <Content Include="Database_Layer\Images\black border 3.PNG" />
+    <Content Include="Database_Layer\Images\blue border-removebg.png" />
+    <Content Include="Database_Layer\Images\blue border.png" />
+    <Content Include="Database_Layer\Images\border 1.png" />
+    <Content Include="Database_Layer\Images\border 2.png" />
+    <Content Include="Database_Layer\Images\border 3.png" />
+    <Content Include="Database_Layer\Images\border 4.png" />
+    <Content Include="Database_Layer\Images\bottom border.png" />
+    <Content Include="Database_Layer\Images\colorful border 1.png" />
+    <Content Include="Database_Layer\Images\colorful border 2.png" />
+    <Content Include="Database_Layer\Images\Delivered customer icon.png" />
+    <Content Include="Database_Layer\Images\gray border.png" />
+    <Content Include="Database_Layer\Images\green border.png" />
+    <Content Include="Database_Layer\Images\left border.png" />
+    <Content Include="Database_Layer\Images\line.png" />
+    <Content Include="Database_Layer\Images\login-removebg.png" />
+    <Content Include="Database_Layer\Images\login.PNG" />
+    <Content Include="Database_Layer\Images\logout success.PNG" />
+    <Content Include="Database_Layer\Images\logout.png" />
+    <Content Include="Database_Layer\Images\make receipt 1.jpg" />
+    <Content Include="Database_Layer\Images\make receipt 2.png" />
+    <Content Include="Database_Layer\Images\Pending Customer icon.png" />
+    <Content Include="Database_Layer\Images\Ready customer icon.png" />
+    <Content Include="Database_Layer\Images\red ribbon.png" />
+    <Content Include="Database_Layer\Images\reset password.png" />
+    <Content Include="Database_Layer\Images\right border.png" />
+    <Content Include="Database_Layer\Images\sa_logo.ico" />
+    <Content Include="Database_Layer\Images\sa_logo2.ico" />
+    <Content Include="Database_Layer\Images\Shop logo 1.PNG" />
+    <Content Include="Database_Layer\Images\shop logo 2.PNG" />
+    <Content Include="Database_Layer\Images\SUIT 1.jpg" />
+    <Content Include="Database_Layer\Images\SUIT 2.png" />
+    <Content Include="Database_Layer\Images\top border.png" />
+    <Content Include="Database_Layer\Images\Total customer icon.png" />
+    <Content Include="Database_Layer\Images\users-icon.jpg" />
+    <None Include="Resources\users-icon.jpg" />
+    <None Include="Resources\Total customer icon.png" />
+    <None Include="Resources\top border.png" />
+    <None Include="Resources\SUIT 2.png" />
+    <None Include="Resources\SUIT 1.jpg" />
+    <None Include="Resources\shop logo 2.PNG" />
+    <None Include="Resources\Shop logo 1.PNG" />
+    <None Include="Resources\sa_logo2.ico" />
+    <None Include="Resources\right border.png" />
+    <None Include="Resources\reset password.png" />
+    <None Include="Resources\red ribbon.png" />
+    <None Include="Resources\Ready customer icon.png" />
+    <None Include="Resources\Pending Customer icon.png" />
+    <None Include="Resources\make receipt 2.png" />
+    <None Include="Resources\make receipt 1.jpg" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\logout success.PNG" />
+    <None Include="Resources\login.PNG" />
+    <None Include="Resources\line.png" />
+    <None Include="Resources\left border.png" />
+    <None Include="Resources\green border.png" />
+    <None Include="Resources\gray border.png" />
+    <None Include="Resources\Delivered customer icon.png" />
+    <None Include="Resources\colorful border 2.png" />
+    <None Include="Resources\colorful border 1.png" />
+    <None Include="Resources\bottom border.png" />
+    <None Include="Resources\border 3.png" />
+    <None Include="Resources\border 2.png" />
+    <None Include="Resources\border 1.png" />
+    <None Include="Resources\blue border-removebg.png" />
+    <None Include="Resources\blue border.png" />
+    <None Include="Resources\black border 3.PNG" />
+    <None Include="Resources\black border 2.png" />
+    <None Include="Resources\balck b order 1.png" />
+    <None Include="Resources\add cutomer logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
