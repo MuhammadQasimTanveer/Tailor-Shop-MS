@@ -1,6 +1,6 @@
 # 👔 Tailor Management System
 
-A modern desktop application designed for tailors to manage customer records, suit orders, and billing efficiently — eliminating the hassle of paper-based work.
+A modern desktop application designed for tailors to manage customer records, suit orders, and billing efficiently by eliminating the hassle of paper-based work.
 
 ---
 
@@ -66,5 +66,5 @@ A modern desktop application designed for tailors to manage customer records, su
 
 ## 🧑‍💻 Author
 
-Developed with 💙 by [Your Name]
+Developed with 💙 by Muhammad Qasim Tanvir
 
